@@ -41,6 +41,6 @@
     "start:prod": "node ./build/index.js",
     "prebuild": "rm -rf ./build",
     "build": "rm -rf ./build && tsc",
-    "test": "autocannon -c 500 -d 30 --workers 10 --renderStatus --latency --warmup [ -c 1 -d 2] localhost:5000"
+    "test": "autocannon -c 500 -d 30 --workers 10 --renderStatusCodes --latency --warmup [ -c 1 -d 2] localhost:5000"
   }
 }
